@@ -17,8 +17,8 @@ $('ducument').ready(function(){
     }
 
     const config = {
-        delay: 0,   
-        position: 'mid' //'button', 'mid'
+        delay: 0,   // default: 0
+        position: 'top' //'button', 'mid' default: 'top'
     }
 
     const selector = '#image';
