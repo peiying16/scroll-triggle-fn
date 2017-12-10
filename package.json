@@ -1,0 +1,18 @@
+{
+  "name": "scroll-triggle-fn",
+  "version": "1.0.0",
+  "description": "a simple scroll triggle that allows you run function when you scroll to specific dom element",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "scroll",
+    "event",
+    "triggle"
+  ],
+  "author": "Brian",
+  "license": "ISC",
+  "dependencies": {
+  }
+}
