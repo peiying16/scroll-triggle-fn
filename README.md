@@ -7,13 +7,12 @@ npm i jquery --save
 
 ```
 var scrollTriggleFn = require("scroll-triggle-fn")
-
 import $ from 'jquery';
 
 $('ducument').ready(function(){
 
-    const callback1 = function() {
-        $('#asd').css('color','#fff');
+    const callback = function(e) {
+        $(e).css('color','#fff');
     }
 
     const config = {
@@ -21,10 +20,9 @@ $('ducument').ready(function(){
         position: 'top' //'button', 'mid' default: 'top'
     }
 
-    const selector = '#image';
+    const selector = 'h1';
 
-    scrollTriggleFn(selector, callback1, config);
-
+    scrollTriggleFn(selector, e, config);
 
 });
 ```

@@ -6,7 +6,7 @@ module.exports = function(selector, callback, config) {
     let elements = $(selector);
 
     elements.each(element => {
-
+        let ele = elements[element];
         let pagePostionY = $(elements[element]).position().top;
         
         let scrollHandler = $(window).on("scroll", function(e){
@@ -31,7 +31,7 @@ module.exports = function(selector, callback, config) {
     
             if (currentPosition > pagePostionY - h) {
                 setTimeout(() => {
-                    callback();
+                    callback(ele);
                 }, config.delay || 0);
                 
             }else{
@@ -40,7 +40,5 @@ module.exports = function(selector, callback, config) {
         });
 
     });
-
-    
 
 }
